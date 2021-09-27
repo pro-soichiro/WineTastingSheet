@@ -1,0 +1,36 @@
+label.correct {
+  background: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  font-weight: bold;
+}
+
+label.wrong {
+  background: #f8d8da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  color: #333; /* 全体の文字色 */
+  background-color: #FFF; /* 全体の背景色 */
+  white-space: nowrap;/* 折り返されないように */
+}
+th, td {
+  padding: 5px 15px;
+  border: solid 1px #a5d1f1;
+}
+th {
+  color: #0d90f3;/* 見出しの文字色 */
+  background-color: #d0ebfd; /* 見出しの背景色 */
+}
+
+/* 500px以下の画面で適用 */
+@media only screen and (max-width: 768px) {
+  table {
+    overflow-x: auto; /* 横スクロール */
+    -webkit-overflow-scrolling: touch; /* スマホでスムーズにスクロールできるように */
+  }
+}
