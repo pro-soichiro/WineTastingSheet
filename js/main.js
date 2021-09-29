@@ -17,7 +17,7 @@
 
 
   lines.forEach(line => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (event) => {
       line.classList.toggle('line-through-on');
       const input = line.childNodes;
       if(line.classList.contains('line-through-on') == true ){
@@ -25,6 +25,7 @@
       }else{
         btn.innerHTML = 'アシスト機能ON';
       }
+      event.preventDefault();
     });
   });
 
