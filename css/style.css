@@ -38,13 +38,12 @@ td {
 
 td > img {
   display: none;
-  /* opacity: 0; */
   position: absolute;
   top: 30px;
   left: 20px;
-  transition: opacity 1s;
-  width: 210px;
+  width: 193px;
   z-index: 10;
+  box-shadow: 0 0 8px gray;
 }
 
 td.appear img {
@@ -60,6 +59,7 @@ td.appear img {
     opacity: 1;
   }
 }
+
 
 /* 500px以下の画面で適用 */
 @media only screen and (max-width: 768px) {
