@@ -1,3 +1,7 @@
+* {
+  user-select: none;
+}
+
 label.correct {
   background: #d4edda;
   border-color: #c3e6cb;
@@ -28,20 +32,23 @@ th {
   background-color: #d0ebfd; /* 見出しの背景色 */
 }
 
-.img-suikazura {
+
+
+td {
   position: relative;
 }
 
-.img-suikazura img {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+td > img {
   opacity: 0;
-  transition: opacity .5s;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  transition: opacity 1s;
   width: 210px;
+  z-index: 10;
 }
 
-.img-suikazura:hover img {
+td.appear img {
   opacity: 1;
 }
 
