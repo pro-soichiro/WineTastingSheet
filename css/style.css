@@ -43,7 +43,7 @@ td > img {
   left: 20px;
   width: 193px;
   z-index: 10;
-  box-shadow: 0 0 8px gray;
+  box-shadow: 0 0 12px gray;
 }
 
 td.appear img {
@@ -59,6 +59,33 @@ td.appear img {
     opacity: 1;
   }
 }
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.line-through {
+  text-decoration: none;
+}
+
+.line-through-on{
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
 
 
 /* 500px以下の画面で適用 */

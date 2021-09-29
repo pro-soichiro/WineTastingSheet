@@ -10,20 +10,21 @@
 <body>
   <div class="container">
     <h1>マーク式解答選択シート （白）</h1>
+    <a href="#" class="btn-square" id="btn">アシスト機能ON</a>
     <div class="appearance">
       <h2>外観</h2>
       <table>
         <tr>
           <th>清澄度</th>
           <td><label><input type="checkbox">澄んだ</label></td>
-          <td><label style="text-decoration: line-through;"><input type="checkbox">やや濁った</label></td>
-          <td><label style="text-decoration: line-through;"><input type="checkbox">濁った</label></td>
+          <td><label class="line-through"><input type="checkbox">やや濁った</label></td>
+          <td><label class="line-through"><input type="checkbox">濁った</label></td>
         </tr>
         <tr>
           <th>輝き</th>
           <td><label><input type="checkbox">輝きのある</label></td>
-          <td><label style="text-decoration: line-through;"><input type="checkbox">落ち着いている</label></td>
-          <td><label style="text-decoration: line-through;"><input type="checkbox">モヤがかかった</label></td>
+          <td><label class="line-through"><input type="checkbox">落ち着いている</label></td>
+          <td><label class="line-through"><input type="checkbox">モヤがかかった</label></td>
         </tr>
       <tr>
       <th rowspan="2">色調(2)</th>
@@ -31,12 +32,12 @@
         <td><label><input type="checkbox">レモンイエロー</label></td>
         <td><label><input type="checkbox">イエロー</label></td>
         <td><label><input type="checkbox">黄金色がかった</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">黄金色</label></td>
+        <td><label class="line-through"><input type="checkbox">黄金色</label></td>
       </tr>
       <tr>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">トパーズ</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">オレンジ</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">アンバー</label></td>
+        <td><label class="line-through"><input type="checkbox">トパーズ</label></td>
+        <td><label class="line-through"><input type="checkbox">オレンジ</label></td>
+        <td><label class="line-through"><input type="checkbox">アンバー</label></td>
       </tr>
         <tr>
         <th rowspan="2">濃淡</th>
@@ -44,31 +45,31 @@
         <td><label><input type="checkbox">淡い</label></td>
         <td><label><input type="checkbox">やや淡い</label></td>
         <td><label><input type="checkbox">やや濃い</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">濃い</label></td>
+        <td><label class="line-through"><input type="checkbox">濃い</label></td>
       </tr>
       <tr>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">非常に濃い</label></td>
+        <td><label class="line-through"><input type="checkbox">非常に濃い</label></td>
       </tr>
         <tr>
         <th>粘性</th>
         <td><label><input type="checkbox">さらっとした</label></td>
         <td><label><input type="checkbox">やや軽い</label></td>
         <td><label><input type="checkbox">やや強い</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">強い</label></td>
+        <td><label class="line-through"><input type="checkbox">強い</label></td>
       </tr>
       <tr>
         <th rowspan="2">外観の印象(2)</th>
         <td><label><input type="checkbox">若々しい</label></td>
         <td><label><input type="checkbox">軽快な</label></td>
         <td><label><input type="checkbox">成熟度が高い</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">濃縮感がある</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">やや熟成した</label></td>
+        <td><label class="line-through"><input type="checkbox">濃縮感がある</label></td>
+        <td><label class="line-through"><input type="checkbox">やや熟成した</label></td>
       </tr>
       <tr>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">熟成した</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">熟成のニュアンスが見え</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">酸化が進んだ</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">完全に酸化している</label></td>
+        <td><label class="line-through"><input type="checkbox">熟成した</label></td>
+        <td><label class="line-through"><input type="checkbox">熟成のニュアンスが見え</label></td>
+        <td><label class="line-through"><input type="checkbox">酸化が進んだ</label></td>
+        <td><label class="line-through"><input type="checkbox">完全に酸化している</label></td>
         </tr>
       </table>
     </div>
@@ -85,7 +86,7 @@
       </tr>
       <tr>
         <td><label><input type="checkbox">華やかな</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">凝縮感のある</label></td>
+        <td><label class="line-through"><input type="checkbox">凝縮感のある</label></td>
         <td><label><input type="checkbox">深みのある</label></td>
         <td><label><input type="checkbox">複雑な</label></td>
         <td><label><input type="checkbox">力強い</label></td>
@@ -113,19 +114,27 @@
           <label>
             <input type="checkbox">スイカズラ
           </label>
-          <img src="../img/suikazura.jpg" alt="スイカズラの写真">
+          <img src="../img/suikazura.png" alt="スイカズラの写真">
         </td>
         <td>
           <label><input type="checkbox">アカシア</label>
-          <img src="../img/akashia.jpg" alt="アカシアの写真">
+          <img src="../img/akashia.png" alt="アカシアの写真">
         </td>
       </tr>
       <tr>
         <td><label><input type="checkbox">白バラ</label></td>
         <td><label><input type="checkbox">キンモクセイ</label></td>
-        <td><label><input type="checkbox">菩提樹</label></td>
+        <td>
+          <label><input type="checkbox">菩提樹</label>
+          <!--  -->
+          <img src="../img/bodaiju.jpg" alt="">
+        </td>
         <td><label><input type="checkbox">ミント</label></td>
-        <td><label><input type="checkbox">アニス</label></td>
+        <td>
+          <label><input type="checkbox">アニス</label>
+          <!--  -->
+          <img src="../img/anisu.jpg" alt="">
+        </td>
       </tr>
       <tr>
         <td><label><input type="checkbox">ヴェルヴェーヌ</label></td>
@@ -145,7 +154,7 @@
       <tr>
         <td><label><input type="checkbox">パン・ドゥ・ミ</label></td>
         <td><label><input type="checkbox">トースト</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">ジンジャーブレッド</label></td>
+        <td><label class="line-through"><input type="checkbox">ジンジャーブレッド</label></td>
         <td><label><input type="checkbox">煙・燻製</label></td>
         <td><label><input type="checkbox">ヴァニラ</label></td>
       </tr>
@@ -167,19 +176,19 @@
         <td><label><input type="checkbox">お香</label></td>
         <td><label><input type="checkbox">白檀（びゃくだん）</label></td>
         <td><label><input type="checkbox">蜜蝋</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">フェノール</label></td>
+        <td><label class="line-through"><input type="checkbox">フェノール</label></td>
       </tr>
         <tr>
         <th rowspan="3">香りの印象(2)</th>
         <td><label><input type="checkbox">若々しい</label></td>
         <td><label><input type="checkbox">嫌気的な</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">熟成感が現れている</label></td>
+        <td><label class="line-through"><input type="checkbox">熟成感が現れている</label></td>
         <td><label><input type="checkbox">第1アロマが強い</label></td>
         <td><label><input type="checkbox">第2アロマが強い</label></td>
       </tr>
       <tr>
         <td><label><input type="checkbox">酸化熟成の段階にある</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">酸化した</label></td>
+        <td><label class="line-through"><input type="checkbox">酸化した</label></td>
         <td><label><input type="checkbox">木樽からのニュアンス</label></td>
         <td><label><input type="checkbox">ニュートラル</label></td>
         <td><label><input type="checkbox">発展的な</label></td>
@@ -198,7 +207,7 @@
         <td><label><input type="checkbox">やや軽い</label></td>
         <td><label><input type="checkbox">やや強い</label></td>
         <td><label><input type="checkbox">強い</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">インパクトのある</label></td>
+        <td><label class="line-through"><input type="checkbox">インパクトのある</label></td>
       </tr>
         <tr>
         <th>甘み<br />（アルコールのボリュームも含む）</th>
@@ -206,20 +215,20 @@
         <td><label><input type="checkbox">ソフトな</label></td>
         <td><label><input type="checkbox">まろやか</label></td>
         <td><label><input type="checkbox">豊かな</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">残糖がある</label></td>
+        <td><label class="line-through"><input type="checkbox">残糖がある</label></td>
       </tr>
         <tr>
         <th rowspan="2">酸味</th>
         <td><label><input type="checkbox">爽やかな</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">堅い</label></td>
+        <td><label class="line-through"><input type="checkbox">堅い</label></td>
         <td><label><input type="checkbox">力強い</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">シャープな</label></td>
+        <td><label class="line-through"><input type="checkbox">シャープな</label></td>
         <td><label><input type="checkbox">なめらかな</label></td>
       </tr>
       <tr>
         <td><label><input type="checkbox">生き生きとした</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">厳しい</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">攻撃的な</label></td>
+        <td><label class="line-through"><input type="checkbox">厳しい</label></td>
+        <td><label class="line-through"><input type="checkbox">攻撃的な</label></td>
       </tr>
         <tr>
         <th>苦味</th>
@@ -227,7 +236,7 @@
         <td><label><input type="checkbox">穏やかな</label></td>
         <td><label><input type="checkbox">コク（深み）を与える</label></td>
         <td><label><input type="checkbox">旨味をともなった</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">強い（突出した）</label></td>
+        <td><label class="line-through"><input type="checkbox">強い（突出した）</label></td>
       </tr>
         <tr>
         <th rowspan="3">バランス</th>
@@ -238,8 +247,8 @@
         <td><label><input type="checkbox">まろやかな</label></td>
       </tr>
       <tr>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">ねっとりした</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">コンパクトな</label></td>
+        <td><label class="line-through"><input type="checkbox">ねっとりした</label></td>
+        <td><label class="line-through"><input type="checkbox">コンパクトな</label></td>
         <td><label><input type="checkbox">ジューシーな</label></td>
         <td><label><input type="checkbox">豊潤な</label></td>
         <td><label><input type="checkbox">厚みのある</label></td>
@@ -266,14 +275,14 @@
             <option value="">14.5%~</option>
           </select>
         </th>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">熱さを感じる</label></td>
+        <td><label class="line-through"><input type="checkbox">熱さを感じる</label></td>
       </tr>
         <tr>
         <th>余韻</th>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">短い</label></td>
+        <td><label class="line-through"><input type="checkbox">短い</label></td>
         <td><label><input type="checkbox">やや短い</label></td>
         <td><label><input type="checkbox">やや長い</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">長い</label></td>
+        <td><label class="line-through"><input type="checkbox">長い</label></td>
       </tr>
     </table>
     </div>
@@ -287,23 +296,23 @@
         <td><label><input type="checkbox">エレガントで、ミネラリー</label></td>
       </tr>
       <tr>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">濃縮し、力強い</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">ポテンシャルがある</label></td>
+        <td><label class="line-through"><input type="checkbox">濃縮し、力強い</label></td>
+        <td><label class="line-through"><input type="checkbox">ポテンシャルがある</label></td>
       </tr>
         <tr>
         <th>適正温度</th>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">8度未満</label></td>
+        <td><label class="line-through"><input type="checkbox">8度未満</label></td>
         <td><label><input type="checkbox">8-10度</label></td>
         <td><label><input type="checkbox">11-14度</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">15-18度</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">19度以上</label></td>
+        <td><label class="line-through"><input type="checkbox">15-18度</label></td>
+        <td><label class="line-through"><input type="checkbox">19度以上</label></td>
 
       </tr>
         <tr>
         <th>グラス</th>
         <td><label><input type="checkbox">小ぶり</label></td>
         <td><label><input type="checkbox">中庸</label></td>
-        <td><label style="text-decoration: line-through;"><input type="checkbox">大ぶり</label></td>
+        <td><label class="line-through"><input type="checkbox">大ぶり</label></td>
 
       </tr>
         <tr>
