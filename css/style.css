@@ -15,16 +15,34 @@ label.wrong {
 table {
   border-collapse: collapse;
   color: #333; /* 全体の文字色 */
-  background-color: #FFF; /* 全体の背景色 */
-  white-space: nowrap;/* 折り返されないように */
+  background-color: #fff; /* 全体の背景色 */
+  white-space: nowrap; /* 折り返されないように */
 }
-th, td {
+th,
+td {
   padding: 5px 15px;
   border: solid 1px #a5d1f1;
 }
 th {
-  color: #0d90f3;/* 見出しの文字色 */
+  color: #0d90f3; /* 見出しの文字色 */
   background-color: #d0ebfd; /* 見出しの背景色 */
+}
+
+.img-suikazura {
+  position: relative;
+}
+
+.img-suikazura img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity .5s;
+  width: 210px;
+}
+
+.img-suikazura:hover img {
+  opacity: 1;
 }
 
 /* 500px以下の画面で適用 */
